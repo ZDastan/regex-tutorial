@@ -59,7 +59,9 @@ e.g. in our section of code:
 
 Regex has special character classes that match types of characters.
 
-In our expression, \d is used to match any digit character.
+In our expression, 
+
+\d is used to match any digit character.
 
 The backslash is necessary in order to differentiate the digit class from a plain letter d.
 
@@ -73,6 +75,13 @@ Because of the unique behavior of ".", the backslash must be used to negate its 
 When writing Regex the search parameters are delimeted by two slash characters /.../ . At the end i.e. after the second slash character is where we specify theflags.
 
 g (global) It allows for the search to continue after the first match and to continue until no more matches can be found.
+i  With this flag the search is case-insensitive: no difference between A and a
+m Multiline mode (covered in the chapter Multiline mode of anchors ^ $, flag "m")
+s Enables “dotall” mode, that allows a dot . to match newline character \n (covered in the chapter Character classes).
+u Enables full Unicode support. The flag enables correct processing of surrogate pairs. More about that in the chapter Unicode: flag "u" and class \p{...}
+y “Sticky” mode: searching at the exact position in the text (covered in the chapter Sticky flag "y", searching at position)
+
+
 ### Grouping and Capturing
 
 Grouping and capturing is done with ( ) in regex.
